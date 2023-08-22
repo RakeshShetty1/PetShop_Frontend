@@ -11,7 +11,7 @@ export const dog=[
     "quantity":10,
     "topLevelCategory":"Animal",
     "secondLevelCategory":"Dog",
-    "description":" The German shepherd dog is a herding breed known for its courage, loyalty and guarding instincts. This breed makes an excellent guard dog, police dog, military dog, guide dog for the blind and search and rescue dog. For many families, the German shepherd is also a treasured family pet."
+    "description":" The German shepherd dog is a herding breed known for its courage, loyalty and guarding instincts. This breed makes an excellent guard dog, police dog, military dog, guide dog for the blind and search and rescue dog."
     },
     {
     "imageUrl":" https://cdn.pixabay.com/photo/2017/12/22/20/49/english-bulldog-3034226_640.jpg",
@@ -24,7 +24,7 @@ export const dog=[
     "quantity":10,
     "topLevelCategory":"Animal",
     "secondLevelCategory":"Dog",
-    "description":" People-oriented as a breed, they actively solicit human attention. However, they have retained the courage that was originally bred into them for bull baiting, so they make fine watchdogs. Although they generally get along well with other family pets, English bulldogs can be aggressive to unfamiliar dogs."
+    "description":" People-oriented as a breed, they actively solicit human attention. However, they have retained the courage that was originally bred into them for bull baiting, so they make fine watchdogs. "
     },
     
     {
@@ -51,7 +51,7 @@ export const dog=[
     "quantity":10,
     "topLevelCategory":"Animal",
     "secondLevelCategory":"Dog",
-    "description":" Siberian Huskies need space to roam and a lot of mental stimulation. Because of this, they make great pets for active families and children. A Siberian Husky will likely become bored with a sedentary lifestyle. Because Huskies are smart and active, they require consistent training from an early age."
+    "description":" Siberian Huskies need space to roam and a lot of mental stimulation. Because of this, they make great pets for active families and children. A Siberian Husky will likely become bored with a sedentary lifestyle."
     },
     {
     "imageUrl":" https://cdn.pixabay.com/photo/2017/09/07/17/48/chihuahua-2726117_640.jpg",

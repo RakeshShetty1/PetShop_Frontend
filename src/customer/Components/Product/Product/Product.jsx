@@ -76,7 +76,7 @@ export default function Product() {
     const [minPrice, maxPrice] =
       price === null ? [0, 0] : price.split("-").map(Number);
     const data = {
-      category: param.lavelThree,
+      category: param.levelTwo,
       colors: colorValue || [],
       sizes: sizeValue || [],
       minPrice: minPrice || 0,
@@ -89,7 +89,7 @@ export default function Product() {
     };
     dispatch(findProducts(data));
   }, [
-    param.lavelThree,
+    param.levelTwo,
     colorValue,
     sizeValue,
     price,

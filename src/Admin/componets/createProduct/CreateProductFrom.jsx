@@ -34,7 +34,7 @@ const CreateProductForm = () => {
     quantity: "",
     topLavelCategory: "",
     secondLavelCategory: "",
-    thirdLavelCategory: "",
+    // thirdLavelCategory: "",
     description: "",
   });
   const dispatch = useDispatch();
@@ -212,7 +212,8 @@ const CreateProductForm = () => {
               >
                 <MenuItem value="dog">Dog</MenuItem>
                 <MenuItem value="cat">Cat</MenuItem>
-                <MenuItem value="birds">Birds</MenuItem>
+                <MenuItem value="fish">Fish</MenuItem>
+                <MenuItem value="rabbit">Rabbit</MenuItem>
               </Select>
             </FormControl>
           </Grid>
