@@ -16,29 +16,29 @@ const data = [
   {
     progress: 75,
     imgHeight: 20,
-    title: 'Men',
+    title: 'Animal',
     color: 'primary',
     amount: '$24,895.65',
-    subtitle: 'Clothing, Footware',
-    imgSrc: 'https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/z/3/7/xl-r-dark-grey-stoneberg-original-imaghghn2vcf5euv.jpeg?q=70'
+    subtitle: 'Pet, Dog',
+    imgSrc: ' https://cdn.pixabay.com/photo/2016/08/21/22/24/dog-1610937_640.jpg'
   },
   {
     progress: 50,
     color: 'info',
     imgHeight: 27,
-    title: 'Women',
+    title: 'Animal',
     amount: '$8,650.20',
-    subtitle: 'Clothing, Handbags, jewellery',
-    imgSrc: 'https://rukminim1.flixcart.com/image/612/612/xif0q/lehenga-choli/y/p/c/free-half-sleeve-jk-6-kedar-fab-original-imaghh4unhxgyveg.jpeg?q=70'
+    subtitle: 'Pet, Cat',
+    imgSrc: 'https://images.pexels.com/photos/1521306/pexels-photo-1521306.jpeg?auto=compress&cs=tinysrgb&w=600'
   },
   {
     progress: 20,
     imgHeight: 20,
-    title: 'Kids',
+    title: 'Animal',
     color: 'secondary',
     amount: '$1,245.80',
-    subtitle: 'Clothing',
-    imgSrc: 'https://rukminim1.flixcart.com/image/612/612/xif0q/kids-t-shirt/i/7/e/10-11-years-bwtrnfulboy-bz55-blive-original-imagmuafh2ennezv.jpeg?q=70'
+    subtitle: 'Pet, Rabbit',
+    imgSrc: 'https://cdn.pixabay.com/photo/2014/09/03/21/01/rabbit-435006_1280.jpg'
   }
 ]
 

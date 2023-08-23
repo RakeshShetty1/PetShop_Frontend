@@ -13,51 +13,51 @@ import { lengha_page1 } from "../../../../Data/Women/LenghaCholi";
 import { dog } from "../../../../Data/Dog/dog";
 
 const product = {
-  name: "Basic Tee 6-Pack",
-  price: "₹996",
-  href: "#",
+  // name: "Basic Tee 6-Pack",
+  // price: "₹996",
+  // href: "#",
   breadcrumbs: [
-    { id: 1, name: "Men", href: "#" },
-    { id: 2, name: "Clothing", href: "#" },
+    { id: 1, name: "Animal", href: "#" },
+    { id: 2, name: "Pet", href: "#" },
   ],
-  images: [
-    {
-      src: "https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg",
-      alt: "Two each of gray, white, and black shirts laying flat.",
-    },
-    {
-      src: "https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg",
-      alt: "Model wearing plain black basic tee.",
-    },
-    {
-      src: "https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg",
-      alt: "Model wearing plain gray basic tee.",
-    },
-    {
-      src: "https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg",
-      alt: "Model wearing plain white basic tee.",
-    },
-  ],
-  colors: [
-    { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
-    { name: "Gray", class: "bg-gray-200", selectedClass: "ring-gray-400" },
-    { name: "Black", class: "bg-gray-900", selectedClass: "ring-gray-900" },
-  ],
-  sizes: [
-    { name: "S", inStock: true },
-    { name: "M", inStock: true },
-    { name: "L", inStock: true },
-  ],
-  description:
-    'The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: "Black". Need to add an extra pop of color to your outfit? Our white tee has you covered.',
-  highlights: [
-    "Hand cut and sewn locally",
-    "Dyed with our proprietary colors",
-    "Pre-washed & pre-shrunk",
-    "Ultra-soft 100% cotton",
-  ],
-  details:
-    'The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming "Charcoal Gray" limited release.',
+  // images: [
+  //   {
+  //     src: "https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg",
+  //     alt: "Two each of gray, white, and black shirts laying flat.",
+  //   },
+  //   {
+  //     src: "https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg",
+  //     alt: "Model wearing plain black basic tee.",
+  //   },
+  //   {
+  //     src: "https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg",
+  //     alt: "Model wearing plain gray basic tee.",
+  //   },
+  //   {
+  //     src: "https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg",
+  //     alt: "Model wearing plain white basic tee.",
+  //   },
+  // ],
+  // colors: [
+  //   { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
+  //   { name: "Gray", class: "bg-gray-200", selectedClass: "ring-gray-400" },
+  //   { name: "Black", class: "bg-gray-900", selectedClass: "ring-gray-900" },
+  // ],
+  // sizes: [
+  //   { name: "S", inStock: true },
+  //   { name: "M", inStock: true },
+  //   { name: "L", inStock: true },
+  // ],
+  // description:
+  //   'The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: "Black". Need to add an extra pop of color to your outfit? Our white tee has you covered.',
+  // highlights: [
+  //   "Hand cut and sewn locally",
+  //   "Dyed with our proprietary colors",
+  //   "Pre-washed & pre-shrunk",
+  //   "Ultra-soft 100% cotton",
+  // ],
+  // details:
+  //   'The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming "Charcoal Gray" limited release.',
 };
 const reviews = { href: "#", average: 4, totalCount: 117 };
 
@@ -140,11 +140,11 @@ export default function ProductDetails() {
             <div className=" overflow-hidden rounded-lg max-w-[30rem] max-h-[35rem]">
               <img
                 src={activeImage?.src || customersProduct.product?.imageUrl}
-                alt={product.images[0].alt}
+                // alt={product.images[0].alt}
                 className="h-full w-full object-cover object-center"
               />
             </div>
-            <div className="flex flex-wrap space-x-5 justify-center">
+            {/* <div className="flex flex-wrap space-x-5 justify-center">
               {product.images.map((image) => (
                 <div
                   onClick={() => handleSetActiveImage(image)}
@@ -157,17 +157,17 @@ export default function ProductDetails() {
                   />
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Product info */}
           <div className="lg:col-span-1 mx-auto max-w-2xl px-4 pb-16 sm:px-6  lg:max-w-7xl  lg:px-8 lg:pb-24">
             <div className="lg:col-span-2">
               <h1 className="text-lg lg:text-xl font-semibold tracking-tight text-gray-900  ">
-                {customersProduct.product?.brand}
+                {customersProduct.product?.breed}
               </h1>
               <h1 className="text-lg lg:text-xl tracking-tight text-gray-900 opacity-60 pt-1">
-                {customersProduct.product?.title}
+                {customersProduct.product?.name}
               </h1>
             </div>
 
@@ -223,15 +223,7 @@ export default function ProductDetails() {
                   Highlights
                 </h3>
 
-                <div className="mt-4">
-                  <ul role="list" className="list-disc space-y-2 pl-4 text-sm">
-                    {product.highlights.map((highlight) => (
-                      <li key={highlight} className="text-gray-400">
-                        <span className="text-gray-600">{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                {/*  */}
               </div>
 
               <div className="mt-10">

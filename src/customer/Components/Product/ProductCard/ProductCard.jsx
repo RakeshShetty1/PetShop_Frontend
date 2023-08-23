@@ -3,7 +3,7 @@ import "./ProductCard.css";
 import{useLocation, useNavigate} from "react-router-dom";
 
 const ProductCard = ({ product }) => {
-  const { title, brand, imageUrl, price ,discountedPrice,color,discountPersent} = product;
+  const { name, breed, imageUrl, price ,discountedPrice,color,discountPersent} = product;
   const navigate= useNavigate();
   
 
@@ -18,8 +18,8 @@ const ProductCard = ({ product }) => {
     </div>
     <div className='textPart bg-white p-3 '>
         <div>
-        <p  className='font-bold opacity-60'>{brand}</p>
-            <p className=''>{title}</p>
+        <p  className='font-bold opacity-60'>{}</p>
+            <p className=''>{name}</p>
         
         <p className='font-semibold opacity-50'>{color}</p>
         </div>

@@ -104,10 +104,10 @@ const ProductsTable = () => {
                 label="Category"
                 onChange={(e) => handleFilterChange(e, "category")}
               >
-                <MenuItem value={"pant"}>Men's Pants</MenuItem>
-                <MenuItem value={"mens_kurta"}>Men's Kurta</MenuItem>
-                <MenuItem value={"saree"}>Saree</MenuItem>
-                <MenuItem value={"lengha_choli"}>Lengha Choli</MenuItem>
+                <MenuItem value={"dog"}>Dog</MenuItem>
+                <MenuItem value={"cat"}>Cat</MenuItem>
+                <MenuItem value={"fish"}>Fish</MenuItem>
+                <MenuItem value={"rabbit"}>Rabbit</MenuItem>
               </Select>
             </FormControl>
           </Grid>
@@ -141,8 +141,8 @@ const ProductsTable = () => {
                 label="Sort By Price"
                 onChange={(e) => handleFilterChange(e, "sort")}
               >
-                <MenuItem value={"price_high"}>Heigh - Low</MenuItem>
-                <MenuItem value={"price_low"}>Low - Heigh</MenuItem>
+                <MenuItem value={"price_high"}>High - Low</MenuItem>
+                <MenuItem value={"price_low"}>Low - High</MenuItem>
               </Select>
             </FormControl>
           </Grid>
@@ -162,7 +162,7 @@ const ProductsTable = () => {
             <TableHead>
               <TableRow>
                 <TableCell>Image</TableCell>
-                <TableCell>Title</TableCell>
+                <TableCell>Breed</TableCell>
                 <TableCell sx={{ textAlign: "center" }}>Category</TableCell>
                 <TableCell sx={{ textAlign: "center" }}>Price</TableCell>
                 <TableCell sx={{ textAlign: "center" }}>Quantity</TableCell>
@@ -180,7 +180,7 @@ const ProductsTable = () => {
                 >
                   <TableCell>
                     {" "}
-                    <Avatar alt={item.titel} src={item.imageUrl} />{" "}
+                    <Avatar alt={item.name} src={item.imageUrl} />{" "}
                   </TableCell>
 
                   <TableCell
@@ -193,9 +193,9 @@ const ProductsTable = () => {
                           fontSize: "0.875rem !important",
                         }}
                       >
-                        {item.title}
+                        {item.name}
                       </Typography>
-                      <Typography variant="caption">{item.brand}</Typography>
+                      <Typography variant="caption">{item.breed}</Typography>
                     </Box>
                   </TableCell>
                   <TableCell sx={{ textAlign: "center" }}>{item.category.name}</TableCell>

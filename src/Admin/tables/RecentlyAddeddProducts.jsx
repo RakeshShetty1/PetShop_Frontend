@@ -23,7 +23,7 @@ const RecentlyAddeddProducts = () => {
         <TableHead>
           <TableRow>
              <TableCell>Image</TableCell>
-            <TableCell>Title</TableCell>
+            <TableCell>Breed</TableCell>
            <TableCell>Category</TableCell>
             <TableCell>Price</TableCell>
              <TableCell>Quantity</TableCell>
@@ -32,15 +32,15 @@ const RecentlyAddeddProducts = () => {
         <TableBody>
           {cat.slice(0,5).map(item => (
             <TableRow hover key={item.name} sx={{ '&:last-of-type td, &:last-of-type th': { border: 0 } }}>
-             <TableCell> <Avatar alt={item.title} src={item.imageUrl} /> </TableCell>
+             <TableCell> <Avatar alt={item.breed} src={item.imageUrl} /> </TableCell>
              
               <TableCell sx={{ py: theme => `${theme.spacing(0.5)} !important` }}>
                 <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                  <Typography sx={{ fontWeight: 500, fontSize: '0.875rem !important' }}>{item.title}</Typography>
-                  <Typography variant='caption'>{item.brand}</Typography>
+                  <Typography sx={{ fontWeight: 500, fontSize: '0.875rem !important' }}>{item.breed}</Typography>
+                  <Typography variant='caption'>{item.name}</Typography>
                 </Box>
               </TableCell>
-              <TableCell>{"dress"}</TableCell>
+              <TableCell>{"Animal"}</TableCell>
               <TableCell>{item.discountedPrice}</TableCell>
               <TableCell>{item.quantity}</TableCell>
               
